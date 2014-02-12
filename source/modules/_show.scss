@@ -1,0 +1,61 @@
+.genres{
+	@include rem("margin", 20, 0, 40, 0);
+	@include margin-auto();
+	width:95%;
+	li{
+		display:inline;
+		@include rem("margin-right", 10);
+		a{
+			color:$darkGrey;
+			border:1px solid $darkGrey;
+			@include roundedCorners(5);
+			@include rem("padding", 5, 10);
+			text-decoration:none;
+
+			&:hover, &:focus{
+				color:black;
+				border:1px solid black;
+			}
+		}
+		a.current{
+			color:$navyBlue;
+			border:1px solid $navyBlue;
+
+			&:hover, &:focus{
+				color:darken($navyBlue, 20%);
+				border:1px solid darken($navyBlue, 20%);
+			}
+		}
+	}
+}
+
+.shows{
+	@include rem("margin", 20, 0);
+	@include margin-auto();
+	text-align:center;
+	width:95%;
+
+	li{
+		@include inline-block();
+		@include rem("width", 400);
+		@include rem("margin-bottom", 50);
+
+		img{
+			float:left;
+			@include rem("width", 100);
+		}
+
+		.content{
+			float:left;
+			text-align:left;
+			@include rem("width", 250);
+			@include rem("margin-left", 10);
+		}
+	}
+
+	.info{
+		li{
+			@include rem("margin-bottom", 5);
+		}
+	}
+}

@@ -1,0 +1,18 @@
+form.contact{
+	legend{
+		@include hide-text();
+	}
+	label{
+		display:block;
+	}
+	input, textarea{
+		display:block;
+	}
+	button{
+		border:none;
+		border:1px solid $evernoteGreen;
+	}
+	.errors{
+		display:none;
+	}
+}
