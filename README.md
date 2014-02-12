@@ -3,6 +3,8 @@ TV-Shows
 
 A guide of TV shows pulling data from IMDB.
 
+[DEMO](http://htmlpreview.github.io/?https://github.com/ryanburgess/TV-Shows/master/index.html)
+
 ## Contributing
 
 1. Fork it
