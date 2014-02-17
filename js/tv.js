@@ -1,115 +1,434 @@
 (function($) {
     "use strict";
 
-    var shows = ["2 Broke Girls",
-			"30 Rock",
-			"666 Park Avenue",
-			"90210",
-			"Adventure Time",
-			"Alcatraz",
-			"American Horror Story",
-			"Anger Management",
-			"Angry Boys",
-			"Archer",
-			"Arrested Development",
-			"Bad Girls Club",
-			"Best Ink",
-			"Better off Ted",
-			"Big Brother",
-			"Boardwalk Empire",
-			"Bob's Burgers",
-			"Bored to Death",
-			"Breaking Bad",
-			"Brotherhood",
-			"Burn Notice",
-			"Californication",
-			"Community",
-			"Covert Affairs",
-			"Criminal Minds",
-			"Desperate Housewives",
-			"Dexter",
-			"Eastbound & Down",
-			"Elementary",
-			"Entourage",
-			"Episodes",
-			"Family Guy",
-			"Flight of the Conchords",
-			"Futurama",
-			"Game of Thrones",
-			"Girls",
-			"Gossip Girl",
-			"Happy Endings",
-			"Homeland",
-			"Hostages",
-			"House of Cards",
-			"House of Lies",
-			"How I Met Your Mother",
-			"How to Make it In America",
-			"Hung",
-			"Ink Master",
-			"It's Always Sunny In Philadelphia",
-			"Ja'mie: Private School Girl",
-			"Jersey Shore",
-			"LA Ink",
-			"Legit",
-			"Lie to Me",
-			"Lost",
-			"Mad Men",
-			"Married With Children",
-			"Modern Family",
-			"Mom",
-			"Napoleon Dynamite",
-			"New Girl",
-			"Nurse Jackie",
-			"Orange Is The New Black",
-			"Parenthood",
-			"Parks And Recreation",
-			"Partners",
-			"Party Down",
-			"Person of Interest",
-			"Portlandia",
-			"Prime Suspect",
-			"Project Runway",
-			"Revenge",
-			"Ringer",
-			"Rules of Engagement",
-			"Scandal",
-			"Seinfeld",
-			"Shameless",
-			"Shark Tank",
-			"Six Feet Under",
-			"Sons of Anarchy",
-			"South Park",
-			"Suburgatory",
-			"Suits",
-			"Summer Heights High",
-			"Tattoo Nightmares",
-			"The Awesomes",
-			"The Bad Girl's Club",
-			"The Big Bang Theory",
-			"The Blacklist",
-			"The Crazy Ones",
-			"The Following",
-			"The Good Wife",
-			"The IT Crowd",
-			"The L Word",
-			"The Mentalist",
-			"The Mindy Project",
-			"The Office",
-			"The Playboy Club",
-			"The Real Housewives of Vancouver",
-			"The Walking Dead",
-			"The Wire",
-			"Trophy Wife",
-			"True Blood",
-			"Two And A Half Men",
-			"Up All Night",
-			"Vegas",
-			"We Are Men",
-			"Weeds",
-			"Workaholics"];
+	var shows = [
+		{
+			"title":"30 Rock",
+			"status":"watched",
+		},
+		{
+			"title":"666 Park Avenue",
+			"status":"watched",
+		},
+		{
+			"title":"90210",
+			"status":"watched",
+		},
+		{
+			"title":"Adventure Time",
+			"status":"watching",
+		},
+		{
+			"title":"Alcatraz",
+			"status":"watched",
+		},
+		{
+			"title":"American Horror Story",
+			"status":"watched",
+		},
+		{
+			"title":"Anger Management",
+			"status":"watching",
+		},
+		{
+			"title":"Angry Boys",
+			"status":"watched",
+		},
+		{
+			"title":"Archer",
+			"status":"watching",
+		},
+		{
+			"title":"Arrested Development",
+			"status":"watched",
+		},
+		{
+			"title":"Bad Girls Club",
+			"status":"watched",
+		},
+		{
+			"title":"Best Ink",
+			"status":"watching",
+		},
+		{
+			"title":"Better off Ted",
+			"status":"watched",
+		},
+		{
+			"title":"Big Brother",
+			"status":"watched",
+		},
+		{
+			"title":"Boardwalk Empire",
+			"status":"watching",
+		},
+		{
+			"title":"Bob's Burgers",
+			"status":"watched",
+		},
+		{
+			"title":"Bored to Death",
+			"status":"watched",
+		},
+		{
+			"title":"Breaking Bad",
+			"status":"watched",
+		},
+		{
+			"title":"Brotherhood",
+			"status":"watched",
+		},
+		{
+			"title":"Burn Notice",
+			"status":"watching",
+		},
+		{
+			"title":"Californication",
+			"status":"watched",
+		},
+		{
+			"title":"Community",
+			"status":"watched",
+		},
+		{
+			"title":"Covert Affairs",
+			"status":"watching",
+		},
+		{
+			"title":"Criminal Minds",
+			"status":"watching",
+		},
+		{
+			"title":"Desperate Housewives",
+			"status":"watched",
+		},
+		{
+			"title":"Dexter",
+			"status":"watched",
+		},
+		{
+			"title":"Eastbound & Down",
+			"status":"watched",
+		},
+		{
+			"title":"Elementary",
+			"status":"watching",
+		},
+		{
+			"title":"Entourage",
+			"status":"watched",
+		},
+		{
+			"title":"Episodes",
+			"status":"watching",
+		},
+		{
+			"title":"Family Guy",
+			"status":"watching",
+		},
+		{
+			"title":"Flight of the Conchords",
+			"status":"watched",
+		},
+		{
+			"title":"Futurama",
+			"status":"watched",
+		},
+		{
+			"title":"Game of Thrones",
+			"status":"watched",
+		},
+		{
+			"title":"Girls",
+			"status":"watched",
+		},
+		{
+			"title":"Gossip Girl",
+			"status":"watched",
+		},
+		{
+			"title":"Happy Endings",
+			"status":"watched",
+		},
+		{
+			"title":"Homeland",
+			"status":"watching",
+		},
+		{
+			"title":"Hostages",
+			"status":"watching",
+		},
+		{
+			"title":"House of Cards",
+			"status":"watching",
+		},
+		{
+			"title":"House of Lies",
+			"status":"watching",
+		},
+		{
+			"title":"How I Met Your Mother",
+			"status":"watched",
+		},
+		{
+			"title":"How to Make it In America",
+			"status":"watched",
+		},
+		{
+			"title":"Hung",
+			"status":"watched",
+		},
+		{
+			"title":"Ink Master",
+			"status":"watched",
+		},
+		{
+			"title":"It's Always Sunny In Philadelphia",
+			"status":"watched",
+		},
+		{
+			"title":"Ja'mie: Private School Girl",
+			"status":"watched",
+		},
+		{
+			"title":"Jersey Shore",
+			"status":"watched",
+		},
+		{
+			"title":"LA Ink",
+			"status":"watched",
+		},
+		{
+			"title":"Legit",
+			"status":"watched",
+		},
+		{
+			"title":"Lie to Me",
+			"status":"watched",
+		},
+		{
+			"title":"Lost",
+			"status":"watched",
+		},
+		{
+			"title":"Mad Men",
+			"status":"watched",
+		},
+		{
+			"title":"Modern Family",
+			"status":"watched",
+		},
+		{
+			"title":"Mom",
+			"status":"watched",
+		},
+		{
+			"title":"Napoleon Dynamite",
+			"status":"watched",
+		},
+		{
+			"title":"New Girl",
+			"status":"watched",
+		},
+		{
+			"title":"Nurse Jackie",
+			"status":"watched",
+		},
+		{
+			"title":"Orange Is The New Black",
+			"status":"watched",
+		},
+		{
+			"title":"Parenthood",
+			"status":"watched",
+		},
+		{
+			"title":"Parks And Recreation",
+			"status":"watched",
+		},
+		{
+			"title":"Partners",
+			"status":"watched",
+		},
+		{
+			"title":"Party Down",
+			"status":"watched",
+		},
+		{
+			"title":"Person of Interest",
+			"status":"watched",
+		},
+		{
+			"title":"Portlandia",
+			"status":"watched",
+		},
+		{
+			"title":"Prime Suspect",
+			"status":"watched",
+		},
+		{
+			"title":"Project Runway",
+			"status":"watched",
+		},
+		{
+			"title":"Revenge",
+			"status":"watched",
+		},
+		{
+			"title":"Ringer",
+			"status":"watched",
+		},
+		{
+			"title":"Rules of Engagement",
+			"status":"watched",
+		},
+		{
+			"title":"Scandal",
+			"status":"watched",
+		},
+		{
+			"title":"Seinfeld",
+			"status":"watched",
+		},
+		{
+			"title":"Shameless",
+			"status":"watching",
+		},
+		{
+			"title":"Shark Tank",
+			"status":"watched",
+		},
+		{
+			"title":"Six Feet Under",
+			"status":"watched",
+		},
+		{
+			"title":"Sons of Anarchy",
+			"status":"watched",
+		},
+		{
+			"title":"South Park",
+			"status":"watched",
+		},
+		{
+			"title":"Suburgatory",
+			"status":"watched",
+		},
+		{
+			"title":"Suits",
+			"status":"watched",
+		},
+		{
+			"title":"Summer Heights High",
+			"status":"watched",
+		},
+		{
+			"title":"Tattoo Nightmares",
+			"status":"watched",
+		},
+		{
+			"title":"The Awesomes",
+			"status":"watched",
+		},
+		{
+			"title":"The Bad Girl's Club",
+			"status":"watched",
+		},
+		{
+			"title":"The Big Bang Theory",
+			"status":"watched",
+		},
+		{
+			"title":"The Blacklist",
+			"status":"watched",
+		},
+		{
+			"title":"The Crazy Ones",
+			"status":"watched",
+		},
+		{
+			"title":"The Following",
+			"status":"watched",
+		},
+		{
+			"title":"The Good Wife",
+			"status":"watched",
+		},
+		{
+			"title":"The IT Crowd",
+			"status":"watched",
+		},
+		{
+			"title":"The L Word",
+			"status":"watched",
+		},
+		{
+			"title":"The Mentalist",
+			"status":"watched",
+		},
+		{
+			"title":"The Mindy Project",
+			"status":"watching",
+		},
+		{
+			"title":"The Office",
+			"status":"watched",
+		},
+		{
+			"title":"The Playboy Club",
+			"status":"watched",
+		},
+		{
+			"title":"The Real Housewives of Vancouver",
+			"status":"watched",
+		},
+		{
+			"title":"The Walking Dead",
+			"status":"watching",
+		},
+		{
+			"title":"White Collar",
+			"status":"watching",
+		},
+		{
+			"title":"The Wire",
+			"status":"watched",
+		},
+		{
+			"title":"Trophy Wife",
+			"status":"watching",
+		},
+		{
+			"title":"True Blood",
+			"status":"watched",
+		},
+		{
+			"title":"Two And A Half Men",
+			"status":"watching",
+		},
+		{
+			"title":"Up All Night",
+			"status":"watched",
+		},
+		{
+			"title":"Vegas",
+			"status":"watched",
+		},
+		{
+			"title":"We Are Men",
+			"status":"watched",
+		},
+		{
+			"title":"Weeds",
+			"status":"watched",
+		},
+		{
+			"title":"Workaholics",
+			"status":"watching"
+		}
+	];
     
-    function tvData(title){
+    function tvData(title, status){
 	    $.ajax({
 	      url: "http://www.imdbapi.com/?t=" + title,
 	        dataType: 'json',
@@ -147,7 +466,8 @@
 	}
 
 	for (var i = 0; i < shows.length; i++){
-	    tvData(shows[i]);
+	    tvData(shows[i].title, shows[i].status);
+
 	}
 
 
