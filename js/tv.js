@@ -658,10 +658,9 @@
 		// watch status
 		var watchStatus = $("#status").val();
 
-		
+		$(".shows .show-item").hide();
 		if(genreClick != "all"){
 			if(watchStatus != ""){
-				$(".shows .show-item").hide();
 				$(".shows li."+ genreClick +"[data-status='"+ watchStatus +"']").fadeIn();
 			}else{
 				$(".shows li."+ genreClick).fadeIn();
