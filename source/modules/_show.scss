@@ -1,5 +1,5 @@
 .genres{
-	@include rem("margin", 20, 0, 40, 0);
+	@include rem("margin", 20, 0, 20, 0);
 	@include margin-auto();
 	width:95%;
 	li{
@@ -29,16 +29,21 @@
 	}
 }
 
+.status{
+	float:left;
+	display:block;
+	@include rem("margin", 0, 0, 20, 40);
+}
+
 .shows{
-	@include rem("margin", 20, 0);
-	@include margin-auto();
-	text-align:center;
-	width:95%;
+	clear:both;
+	@include rem("margin", 20, 0, 20, 40);
 
 	li{
 		@include inline-block();
 		@include rem("width", 400);
 		@include rem("margin-bottom", 50);
+		text-align:left;
 
 		img{
 			float:left;
