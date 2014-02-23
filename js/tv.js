@@ -127,6 +127,14 @@
 			"status":"watched"
 		},
 		{
+			"title":"Castle",
+			"status":"not-watched"
+		},
+		{
+			"title":"Celebrity Apprentice",
+			"status":"watched"
+		},
+		{
 			"title": "Chuck",
 			"status": "not-watched",
 		},
@@ -327,6 +335,10 @@
 			"status":"watched"
 		},
 		{
+			"title":"Miami Ink",
+			"status":"watched"
+		},
+		{
 			"title":"Modern Family",
 			"status":"watched"
 		},
@@ -397,6 +409,10 @@
 		{
 			"title":"Project Runway",
 			"status":"watched"
+		},
+		{
+			"title":"Rake",
+			"status":"not-watched"
 		},
 		{
 			"title":"Revenge",
