@@ -135,6 +135,10 @@
 			"status":"watched"
 		},
 		{
+			"title":"Chozen",
+			"status":"not-watched"
+		},
+		{
 			"title": "Chuck",
 			"status": "not-watched",
 		},
@@ -355,6 +359,10 @@
 			"status":"stopped-watching",
 		},
 		{
+			"title":"Nikita",
+			"status":"stopped-watching",
+		},
+		{
 			"title": "Numb3rs",
 			"status":"watched"
 		},
@@ -388,7 +396,7 @@
 		},
 		{
 			"title":"Partners",
-			"status":"watched"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Party Down",
@@ -520,7 +528,7 @@
 		},
 		{
 			"title":"The League",
-			"status":"watched"
+			"status":"not-watched"
 		}, 
 		{
 			"title":"The L Word",
@@ -561,6 +569,10 @@
 		{
 			"title":"The Walking Dead",
 			"status":"watching"
+		},
+		{
+			"title":"True Detective",
+			"status":"not-watched"
 		},
 		{
 			"title":"White Collar",
