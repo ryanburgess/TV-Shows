@@ -71,6 +71,10 @@
 			"status":"watching"
 		},
 		{
+			"title":"Betas",
+			"status":"watching"
+		},
+		{
 			"title":"Better off Ted",
 			"status":"watched"
 		},
@@ -565,6 +569,14 @@
 		{
 			"title":"Two And A Half Men",
 			"status":"watching"
+		},
+		{
+			"title":"Ugly Betty",
+			"status":"watched"
+		},
+		{
+			"title":"United States of Tara",
+			"status":"watched"
 		},
 		{
 			"title":"Up All Night",
