@@ -84,7 +84,7 @@
 		},
 		{
 			"title":"Black Mirror",
-			"status":"not-watched"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Boardwalk Empire",
@@ -380,15 +380,15 @@
 		},
 		{
 			"title":"Oz",
-			"status":"stopped-watching",
+			"status":"stopped-watching"
 		},
 		{
   			"title": "Prison Break",
-  			"status":"stopped-watching",
+  			"status":"stopped-watching"
   		},
 		{
 			"title":"Parenthood",
-			"status":"stopped-watching",
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Parks And Recreation",
@@ -634,7 +634,7 @@
     
     function tvData(title, status){
 	    $.ajax({
-	      url: "http://www.imdbapi.com/?t=" + title,
+	    	url: "http://www.imdbapi.com/?t=" + title,
 	        dataType: 'json',
 	        success: function(data){
 	            var year = data.Year;
