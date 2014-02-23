@@ -152,7 +152,7 @@
 		},
 		{
 			"title":"Covert Affairs",
-			"status":"watching"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Criminal Minds",
