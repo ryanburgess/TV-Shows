@@ -256,7 +256,7 @@
 		},
 		{
 			"title":"Homeland",
-			"status":"watching"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Hostages",
@@ -292,7 +292,7 @@
 		},
 		{
 			"title":"Ja'mie: Private School Girl",
-			"status":"watching"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Jersey Shore",
