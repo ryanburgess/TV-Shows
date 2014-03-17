@@ -68,7 +68,7 @@
 		},
 		{
 			"title":"Best Ink",
-			"status":"watching"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Betas",
@@ -88,7 +88,7 @@
 		},
 		{
 			"title":"Boardwalk Empire",
-			"status":"watching"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"Bob's Burgers",
@@ -192,7 +192,7 @@
 		},
 		{
 			"title":"Downton Abbey",
-			"status":"not-watched"
+			"status":"watching"
 		},
 		{
 			"title":"Eastbound & Down",
@@ -260,11 +260,11 @@
 		},
 		{
 			"title":"Hostages",
-			"status":"watching"
+			"status":"stopped-watching"
 		},
 		{
 			"title":"House of Cards",
-			"status":"watching"
+			"status":"watched"
 		},
 		{
 			"title":"House of Lies",
