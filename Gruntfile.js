@@ -19,15 +19,9 @@ module.exports = function(grunt) {
 		},
 		uglify: {
 		    dist: {
-		      files: [
-		      	{
-		        	expand: true,
-		          	cwd: 'js/',
-		         	src: '**/*.js',
-		            dest: 'js/',
-		            ext: '.min.js'
-		      	},
-		      ],
+		      files:{
+                 'js/tv.min.js': ['js/tv.js'],
+		     },
 		    }
 		},
 		watch: {
