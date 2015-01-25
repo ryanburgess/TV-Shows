@@ -5,7 +5,7 @@
 
 	$.ajax({
     type: 'POST',
-    url: 'data/shows.json',
+    url: '../data/shows.json',
     dataType: 'json',
     cache: false,
     success: function(result) {
